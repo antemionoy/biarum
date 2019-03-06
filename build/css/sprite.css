@@ -1,0 +1,96 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-icon_blue {
+  background-image: url(sprite.png);
+  background-position: -27px -123px;
+  width: 12px;
+  height: 7px;
+}
+.icon-arrow-icon_white {
+  background-image: url(sprite.png);
+  background-position: 0px -123px;
+  width: 12px;
+  height: 8px;
+}
+.icon-fb-icon {
+  background-image: url(sprite.png);
+  background-position: -129px 0px;
+  width: 8px;
+  height: 16px;
+}
+.icon-fb-icon_big {
+  background-image: url(sprite.png);
+  background-position: 0px -85px;
+  width: 11px;
+  height: 23px;
+}
+.icon-linkedin-icon {
+  background-image: url(sprite.png);
+  background-position: -26px -85px;
+  width: 16px;
+  height: 15px;
+}
+.icon-linkedin-icon_big {
+  background-image: url(sprite.png);
+  background-position: -92px 0px;
+  width: 22px;
+  height: 21px;
+}
+.icon-rss-icon {
+  background-image: url(sprite.png);
+  background-position: -89px -85px;
+  width: 14px;
+  height: 14px;
+}
+.icon-rss-icon_big {
+  background-image: url(sprite.png);
+  background-position: -92px -36px;
+  width: 19px;
+  height: 20px;
+}
+.icon-tw-icon {
+  background-image: url(sprite.png);
+  background-position: -57px -85px;
+  width: 17px;
+  height: 14px;
+}
+.icon-tw-icon__big {
+  background-image: url(sprite.png);
+  background-position: 0px -50px;
+  width: 24px;
+  height: 20px;
+}
+.icon-youtube-icon {
+  background-image: url(sprite.png);
+  background-position: -51px 0px;
+  width: 26px;
+  height: 25px;
+}
+.icon-youtube-icon_big {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 36px;
+  height: 35px;
+}
+.icon-zoom-icon {
+  background-image: url(sprite.png);
+  background-position: -39px -50px;
+  width: 16px;
+  height: 16px;
+}

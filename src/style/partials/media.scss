@@ -1,0 +1,457 @@
+@import "vars";
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .content__icons {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .content-nav__menu{
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        height: 56px;
+        &__nav {
+            padding: 20px;
+            margin: 0px;
+            opacity: 0;
+            visibility: hidden;
+            width: 240px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            position: fixed;
+            background-color: #166894;
+            overflow-y: auto;
+            z-index: 9999;
+            transition: all 0.4s cubic-bezier(.25, .46, .45, .94);
+            transform: translateX(-100%);
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                transition-delay: 0.4s;
+                transition: all 0.9s cubic-bezier(.25, .46, .45, .94), opacity 1.2s cubic-bezier(.25, .46, .45, .94);
+                transform: translateX(0);
+            }
+        }
+        &__menu {
+            flex-direction: column;
+        }
+        &__logo {
+            margin: auto;
+        }
+        &__profile {
+            display: none;
+        }
+        &__hamburger {
+            display: block;
+        }
+        &__points {
+            display: block;
+        }
+    }
+    .content-nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 600px;
+        opacity: 0;
+        padding: 46px 0px 0px;
+        visibility: hidden;
+        background-color: #fff;
+        z-index: 9999;
+        transition: all .35s cubic-bezier(.25, .46, .45, .94);
+        box-shadow: 0 6px 17px 1px rgba(35, 45, 55, 0.15);
+        &__menu,
+        &__container {
+            flex-direction: column;
+            position: static;
+            padding: 0px;
+        }
+        &__container {
+            align-items: stretch;
+        }
+        &__menu {
+            margin: 20px 0px;
+        }
+        &__item {
+            padding: 10px 45px;
+            font-size: 14px;
+            margin: 0;
+        }
+        &__btn {
+            position: static;
+            margin-right: auto;
+            margin-left: 45px;
+            font-size: 16px;
+        }
+        &__form {
+            display: block;
+            padding: 0px 15px;
+        }
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            animation-duration: 0.5s;
+            animation-name: headerAnimation;
+            transition: all .35s cubic-bezier(.25, .46, .45, .94);
+        }
+        &__close {
+            display: block;
+            position: absolute;
+            top: 12px;
+            right: 15px;
+        }
+    }
+    .content-nav .form__input {
+        width: 100%;
+        max-width: 100%;
+        height: 35px;
+        border: none;
+        font-size: 14px;
+        border-bottom: 1px solid #b9c3cd;
+        color: #b9c3cd;
+        padding: 0px 30px;
+        background: url(../img/sprite.png);
+    }
+    .content-nav__item_active {
+        color: #37414b;
+        position: relative;
+        background-color: #f0f5fa;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #00aaff;
+        }
+    }
+    .review {
+        &__inner {
+            width: 100%;
+        }
+    }
+    .footer__row {
+        flex-wrap: wrap;
+    }
+    .footer__col:last-child {
+        margin-left: 0;
+    }
+    .menu {
+        &__item {
+            margin-right: 0px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    }
+    .dropdown {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .hidden-text {
+        display: none;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 12px 26px 14px;
+    }
+    .title {
+        &_h1 {
+            font-size: 58px;
+        }
+        &_h2 {
+            font-size: 30px;
+            letter-spacing: -0.3px;
+        }
+        &_h3 {
+            font-size: 18px;
+            letter-spacing: 0.18px;
+        }
+        &_h4 {
+            font-size: 16px;
+            letter-spacing: 0.16px;
+        }
+    }
+    .content-nav__item_active .content-nav__link {
+        color: #37414b;
+    }
+    .close {
+        &:before {
+            font-size: 26px;
+        }
+    }
+    .video {
+        &__play {
+            width: 60px;
+            height: 36px;
+            &:after {
+                border: 10px solid transparent;
+                border-left: 15px solid #fff;
+                left: 62%;
+            }
+        }
+    }
+    .content {
+        padding: 30px 0px 50px;
+        &-two {
+            padding: 60px 0px 50px;
+        }
+        &-three {
+            padding: 49px 0px 54px;
+        }
+        &__top {
+            padding-bottom: 0;
+        }
+        &__bottom {
+            padding: 49px 0px 0px;
+        }
+        &__title {
+            margin-bottom: 28px;
+            &_fz-big {
+                font-size: 30px;
+            }
+        }
+        &__subtitle {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 17px;
+            font-weight: 300;
+            &_mob {
+                display: block;
+            }
+            &_desktop {
+                display: none;
+            }
+        }
+        &__text {
+            width: 100%;
+            font-size: 18px;
+            letter-spacing: 0.18px;
+            margin: 0;
+        }
+        &__icons {
+            margin: 85px 0px 42px;
+        }
+    }
+    .content-two .content__title {
+        font-size: 30px;
+        letter-spacing: -0.3px;
+    }
+    .content-two .content__text {
+        font-size: 16px;
+        letter-spacing: .16px;
+    }
+    .content-three .content__text {
+        line-height: 20px;
+    }
+    .content-three .content__text p {
+        margin-bottom: 20px;
+    }
+    .content-three .content__subtitle {
+        font-size: 18px;
+    }
+    .content-three .content__btn {
+        margin: 24px 0px 0px;
+    }
+    .c-bottom {
+        &__subtitle {
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: 0.16px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+    .c-icons {
+        padding: 0px;
+        flex-direction: column;
+        justify-content: center;
+        &__text {
+            font-size: 30px;
+            width: 76px;
+            height: 76px;
+            margin: 30px 0px 38px;
+        }
+        &__name {
+            font-size: 20px;
+            line-height: 30px;
+            margin: 27px 0px 0px;
+            font-weight: 700;
+            padding-left: 0;
+        }
+        &__image {
+            margin-right: 50px;
+            &_cake {
+                width: 164px;
+                height: 127px;
+            }
+            &_microscope {
+                width: 151px;
+                height: 126px;
+            }
+        }
+    }
+    .markers {
+        &__item {
+            margin-top: 39px;
+        }
+        &__name {
+            font-weight: 700;
+        }
+    }
+    .review {
+        padding: 0px;
+        &__inner {
+            width: 100%;
+            padding: 28px 15px 17px;
+            line-height: 24px;
+            font-size: 18px;
+        }
+        &__image {
+            object-fit: cover;
+            position: static;
+            height: 440px;
+        }
+        &__container {
+            flex-direction: column;
+            padding: 0px;
+        }
+        &__name {
+            text-align: center;
+        }
+        &__position {
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+    .modal-overlay {
+        top: 56px;
+    }
+    .modal-wrapper {
+        padding: 0px;
+        overflow: hidden;
+    }
+    .modal {
+        position: fixed;
+        max-width: 100%;
+        margin-top: 56px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 25px 15px;
+        &__title {
+            display: none;
+        }
+        &__subtitle {
+            font-size: 16px;
+            line-height: 18px;
+            text-align: left;
+        }
+    }
+    .modal__form .form__btn {
+        margin: 30px auto 0px;
+    }
+    .footer {
+        min-height: 285px;
+        padding: 0px 25px;
+        text-align: center;
+        &__col {
+            width: 100%;
+            &:last-child {
+                width: 100%;
+                flex-direction: column-reverse;
+                display: flex;
+            }
+            &_hidden {
+                display: none;
+            }
+        }
+        &__title {
+            display: none;
+        }
+        &__social {
+            justify-content: center;
+            padding: 27px 0px;
+            &:after {
+                display: none;
+            }
+        }
+        &__contacts {
+            margin-top: 26px;
+        }
+
+        &__copy{
+            display: block;
+        }
+    }
+    .social {
+        &__item {
+            min-width: 42px;
+            min-height: 42px;
+        }
+    }
+    .footer__contacts .contacts__name {
+        display: none;
+    }
+    .footer__contacts .contacts__item {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 300;
+    }
+    .footer__contacts .contacts__item,
+    .footer__contacts .contacts__link {
+        margin: 0px;
+    }
+    .contacts__item:last-child {
+        display: block;
+    }
+    .footer // icons
+    .icon-rss-icon {
+        background-position: -92px -36px;
+        width: 19px;
+        height: 20px;
+    }
+    .icon-fb-icon {
+        background-position: 0px -85px;
+        width: 11px;
+        height: 23px;
+    }
+    .icon-tw-icon {
+        background-position: 0px -50px;
+        width: 24px;
+        height: 20px;
+    }
+    .icon-linkedin-icon {
+        background-position: 0px -85px;
+        width: 11px;
+        height: 23px;
+    }
+    .icon-youtube-icon {
+        background-position: 0px 0px;
+        width: 36px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1199px) {
+    .review__image {
+        object-fit: cover;
+    }
+}

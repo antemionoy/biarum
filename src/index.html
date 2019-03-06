@@ -1,0 +1,161 @@
+//= template/header.html
+<main class="main">
+    <section class="promo">
+        <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source media="(max-width: 480px)" srcset="/img/promo-back_min.jpg" class="promo__image">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/img/promo-back.jpg" class="promo__image" alt="Promo image">
+        </picture>
+        <div class="container promo__container d-flex">
+            <h1 class="promo__title title title_h1">Lorem<span class="title__sub title__sub_fw-normal">ipsum</span></h1>
+        </div>
+    </section>
+    <nav class="content-nav">
+        <div class="container content-nav__container d-flex">
+            <button class="content-nav__close close"></button>
+            <form action="#" class="content-nav__form form">
+                <label for="#" class="form__label"></label>
+                <input type="text" class="form__input" placeholder="Search">
+            </form>
+            <ul class="content-nav__menu d-flex">
+                <li class="content-nav__item content-nav__item_active">
+                    <a href="#content-id_one" class="content-nav__link  js-scrollToEl">What is Lorem Ipsum?</a>
+                </li>
+                <li class="content-nav__item">
+                    <a href="#content-id_two" class="content-nav__link js-scrollToEl">Why do we use it</a>
+                </li>
+                <li class="content-nav__item">
+                    <a href="#content-id_three" class="content-nav__link js-scrollToEl">Come from?</a>
+                </li>
+            </ul>
+            <a href="#" class="content-nav__btn btn btn_color-trasnt">Get Lorem</a>
+        </div>
+    </nav>
+    <section id="content-id_one" class="content content-one content_text-center">
+        <div class="container">
+            <h2 class="content__title content__title_fz-big title_h2">What is Lorem Ipsum?</h2>
+            <p class="content__subtitle subtitle">Lorem Ipsum is simply dummy text </p>
+            <div class="content__text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into <span class="hidden-text">electronic typesetting, remaining essentially</span></p>
+            </div>
+            <div class="content__video video d-flex">
+                <a class="video__link" href="https://youtu.be/ZVhFxvjTIqw">
+                    <picture>
+                        <img class="video__media" src="img/video-back-new.svg" alt="Мармок">
+                    </picture>
+                    <button class="video__play"></button>
+                </a>
+            </div>
+            <a href="#" class="content__btn btn">Get Lorem</a>
+        </div>
+    </section>
+    <section id="content-id_two" class="content content-two content_bg-color-grey content_text-center ">
+        <div class="container">
+            <h2 class="content__title title_h2">Why do we use it?</h2>
+            <p class="content__subtitle content__subtitle_desktop subtitle">It is a long established fact that a reader will be distracted</p>
+            <p class="content__subtitle content__subtitle_mob subtitle">Take action, see improvements.</p>
+            <div class="content__icons c-icons d-flex">
+                <div class="c-icons__item">
+                    <img src="/img/content-icon_one.svg" alt="Cake" class="c-icons__image c-icons__image_cake">
+                    <p class="c-icons__name">Use?</p>
+                </div>
+                <div class="c-icons__item c-icons__item_center">
+                    <p class="c-icons__text">VS</p>
+                </div>
+                <div class="c-icons__item">
+                    <img src="/img/content-icon_two.svg" alt="Microscope" class="c-icons__image c-icons__image_microscope">
+                    <p class="c-icons__name">Lorem?</p>
+                </div>
+            </div>
+            <div class="content__text">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <span class="hidden-text">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</span></p>
+                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a se</p>
+            </div>
+            <a href="#" class="content__btn btn">learn More</a>
+        </div>
+    </section>
+    <section id="content-id_three" class="content content-three content_text-center">
+        <div class="container">
+            <div class="content__top">
+                <h2 class="content__title title_h2">Where does it come from?</h2>
+                <p class="content__subtitle subtitle">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                <div class="content__text">
+                    <p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
+                    <p>This book is a treatise on the theory of ethics, very popular during the <a href="#" class="content__link">Renaissance</a>. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+            </div>
+            <div class="content__bottom c-bottom">
+                <p class="c-bottom__subtitle">There are many variations of passages of Lorem Ipsum available</p>
+                <h3 class="c-bottom__title title_not-upper title_h3">Where can i get some?</h3>
+                <div class="content__markers markers wrap d-flex">
+                    <div class="markers__item markers__item_col-2">
+                        <img src="/img/marker-3.svg" alt="" class="markers__image">
+                        <p class="markers__name">Marker1</p>
+                        <p class="markers__text">Text1</p>
+                    </div>
+                    <div class="markers__item markers__item_col-2">
+                        <img src="/img/marker-2.svg" alt="" class="markers__image">
+                        <p class="markers__name">Marker1</p>
+                        <p class="markers__text">Text1</p>
+                    </div>
+                    <div class="markers__item markers__item_col-2">
+                        <img src="/img/marker-2.svg" alt="" class="markers__image">
+                        <p class="markers__name">Marker1</p>
+                        <p class="markers__text">Text1</p>
+                    </div>
+                    <div class="markers__item markers__item_col-2">
+                        <img src="/img/marker-2.svg" alt="" class="markers__image">
+                        <p class="markers__name">Marker1</p>
+                        <p class="markers__text">Text1</p>
+                    </div>
+                    <div class="markers__item markers__item_col-2">
+                        <img src="/img/marker-1.svg" alt="" class="markers__image">
+                        <p class="markers__name">Marker1</p>
+                        <p class="markers__text">Text1</p>
+                    </div>
+                    <div class="markers__item markers__item_col-2">
+                        <img src="/img/marker-1.svg" alt="" class="markers__image">
+                        <p class="markers__name">Marker1</p>
+                        <p class="markers__text">Text1</p>
+                    </div>
+                </div>
+                <h3 class="c-bottom__title title_not-upper title_h3">Where can i get some?</h3>
+                <div class="content__markers markers wrap markers_center d-flex">
+                    <div class="markers__item markers__item_col-2">
+                        <img src="/img/marker-2.svg" alt="" class="markers__image">
+                        <p class="markers__name">Marker1</p>
+                        <p class="markers__text">Text1</p>
+                    </div>
+                    <div class="markers__item markers__item_col-2">
+                        <img src="/img/marker-2.svg" alt="" class="markers__image">
+                        <p class="markers__name">Marker1</p>
+                        <p class="markers__text">Text1</p>
+                    </div>
+                </div>
+                <p class="c-bottom__text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                <a href="#" class="content__btn btn btn-open-modal-js">Get the free Book</a>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="container review__container d-flex">
+            <div class="review__inner">
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+                </p>
+                <p class="review__name">Madonna</p>
+                <p class="review__position">Star</p>
+            </div>
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="(max-width: 480px)" srcset="/img/review-back-min.jpg" class="review__image">
+                <!--[if IE 9]></video><![endif]-->
+                <img src="/img/review-back.jpg" class="review__image" alt="Review image">
+            </picture>
+        </div>
+    </section>
+</main>
+//= template/footer.html
